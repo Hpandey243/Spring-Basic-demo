@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- <bean id="reportService" class="com.demo.spring.ReportService">
+    <constructor-arg name="nm" value="gaurav"/>
+    <constructor-arg name="noOfPages" value="250"/>    
+    <constructor-arg type="String" index="1" value="gaurav"/>
+    <constructor-arg type="int" index="0" value="250"/>
+    <constructor-arg type="com.demo.spring.ReportGenerator" index="2" ref="pdfReportGenerator"/>
+    </bean>
+    -->
+    
+    <bean id="reportService" class="com.demo.spring.ReportService" >
+    <property name="noOfPages" value="400"></property>
+    <property name="name" value="gaurav"></property>
+    <property name="master" ref="pdfReportGenerator"></property>
+    </bean>
+   
+ <bean id="htmlReportGenerator" class="com.demo.spring.HtmlReportGenerator"/>
+ <bean id="pdfReportGenerator" class="com.demo.spring.PdfReportGenerator"/>
+ 
+</beans>
