@@ -16,6 +16,6 @@
 	    </bean>
 
 	    <bean id="pdfReportGenerator" class="com.demo.spring.PdfReportGenerator" />
-	    <bean id="htmlReportGenerator" class="com.demo.spring.HtmlReportGenerator" />
-
+	<!--     <bean id="htmlReportGenerator" class="com.demo.spring.HtmlReportGenerator" />
+ -->
 </beans>
