@@ -14,6 +14,8 @@ In ReportService class there is Dependency of  ReportGenerator class.
         autowire="byName" looks for the specified name of bean id.
         
         Instead of using autowire in XML we can use java @Autowired annotation on the property or setter methods or contructors.
+        
+        ApplicationContext is container that  gets bean from xml files.
   
   
 
